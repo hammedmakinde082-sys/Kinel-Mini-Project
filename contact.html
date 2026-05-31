@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="logo">
+                <h2>Tech<span id="gold">Learn</span></h2>
+            </div>
+            <navbar class="nav">
+                <ul>
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li><a href="index.html#courses" target="_blank">Courses</a></li>
+                    <li><a href="index.html#class-schedule"  target="_blank">Schedule</a></li>
+                    <li><a id="active" href="contact.html" target="_blank">Contact Us</a></li>
+                </ul>
+            </navbar>
+        </div>
+    </header>
+
+    <section id="layout">
+        <div class="container">
+            <h1 id="white4">Contact <span id="gold">Us</span></h1>
+            <p id="gray">Have questions? Ready to enroll? We'd love to hear from you.</p>
+
+            <div class="container-layout-flex">
+                <div class="left-side-layout">
+                    <form>
+                        <h2>Send Us a Message</h2>
+                        <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+
+                        <label for="fname">First Name <span id="gold">*</span></label>
+                        <input class="focus-cls" type="text" name="firstname" id="fname" placeholder="e.g. Amara Okafor" required>
+                        <label for="email">Email Address <span id="gold">*</span></label>
+                        <input class="focus-cls" type="email" name="email" id="email" placeholder="you@example.com" required>
+                        <label for="number">Phone Number</label>
+                        <input class="focus-cls" type="number" name="number" id="number" placeholder="+234 800 000 0000" required>
+                        <label for="course">Course of Interest <span id="gold">*</span></label>
+                        <select class="focus-cls" name="course" id="course" required>
+                        <option value="" disabled selected>-- Select a course --</option>
+                        <option value="">HTML & CSS Foundations</option>
+                        <option value="">Full-Stack Javascript</option>
+                        <option value="">UI/UX & Design System</option>
+                        <option value="">Python for Beginners</option>
+                        <option value="">Other / Not sure yet</option>
+                        </select>
+
+                        <p id="white2">Preferred Learning Mode <span id="gold">*</span></p>
+                        <div class="preferred-mode">
+                            <label class="color-gray"><input type="radio" name="radio" id="radio"> Online</label>
+                            <label class="color-gray"><input type="radio" name="radio" id="radio"> In-Person</label>
+                            <label class="color-gray"><input type="radio" name="radio" id="radio"> Hybrid</label>                    
+                        </div>
+                
+                        <p id="white3">How did you hear about us?</p>
+                        <label class="color-gray"><input type="checkbox" name="checkbox" id="checkbox"> Social Media</label>
+                        <label class="color-gray"><input type="checkbox" name="checkbox" id="checkbox"> Friend / Referral</label>
+                        <label class="color-gray"><input type="checkbox" name="checkbox" id="checkbox"> Google Search</label>
+                        <label class="color-gray"><input type="checkbox" name="checkbox" id="checkbox"> Event / Flyer</label>
+                
+                        <label class="your-message" for="message">Your Message</label>
+                        <textarea class="focus-cls" name="message" id="message" placeholder="Tell us anything else you'd like us to know..."></textarea>
+                        <button class="submit-message" type="submit">
+                                Send Message 
+                            <svg class="message" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg> 
+                        </button>
+                    </form>
+                </div>
+
+                <div class="right-side-layout">
+                    <div id="find-us">
+                        <h2 id="white">Find Us</h2>
+                        <div id="semiwhite">
+                            <p>📍 14 Adeola Odeku Street, Victoria Island, Lagos, Nigeria.</p>
+                            <p id="hover">📞 +234 801 234 5679</p>
+                            <p id="hover">📧 hello@techlearn.ng</p>
+                            <p>🕐 Mon - Fri: 9:00 AM - 5:00 PM / Sat: 10:00AM - 2:00PM</p>
+                        </div>
+                    </div>
+                    <table id="table2">
+                        <caption>Quick FAQs</caption>
+                        <thead>
+                            <th>QEUSTION</th>
+                            <th>ANSWER</th>
+                        </thead>
+                        <tbody>
+                            <td>Do i need a laptop?</td>
+                            <td>Yes, any modern laptop works.</td>
+                        </tbody>
+                        <tbody>
+                            <td>Are classes recorded?</td>
+                            <td>Yes, for 2 weeks after each sessions.</td>
+                        </tbody>
+                        <tbody>
+                            <td>Is there a discount?</td>
+                            <td>Yes - 10% for early enrollment.</td>
+                        </tbody>
+                        <tbody>
+                            <td>Can I pay in installment?</td>
+                            <td>Yes, split into 2 payments.</td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div>
+                <h2>Tech<span id="gold">Learn</span></h2>
+                <p>Building the next generation of Nigerian developers.</p>
+            </div>
+            <div>
+                <p>QUICK LINKS</p>
+                <ul>
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li><a href="index.html#courses" target="_blank">Courses</a></li>
+                    <li><a href="index.html#class-schedule" target="_blank">Schedule</a></li>
+                    <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>CONTACT</p>
+                <p>📍14 Adeola Odeku St, VI, Lagos</p>
+                <p>📞+2348012345678</p>
+                <p>📧 hello@techlearn.ng</p>
+            </div>
+        </div>
+    </footer>
+            <div class="footer">
+                <p>&copy; 2025 TechLearn Academy. All rights reserved.</p>
+            </div>
+</body>
+</html>

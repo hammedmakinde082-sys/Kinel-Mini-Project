@@ -1,0 +1,823 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#gold{
+    color: darkgoldenrod;
+    font-weight: bold;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+header {
+    background-color: #0d0f14;
+    border-bottom: 1px solid #232733;
+    position: fixed;
+    width: 100%;
+}
+
+header > div {
+    background-color: #0d0f14;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #logo{
+    color: white;
+    padding: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+header .nav ul{
+    display: flex;
+    gap: 30px;
+    padding: 25px;
+    list-style: none;
+}
+
+header .nav ul li a{
+    text-decoration: none;
+    color: grey;
+    font-size: 1rem;
+}
+
+header .nav .active{
+    color: darkgoldenrod;
+}
+
+header .nav ul li a:hover{
+    cursor: pointer;
+    color: darkgoldenrod;
+}
+
+#showcase{
+    background-color: #0d0f14;
+    padding: 25px;
+}
+
+#showcase .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#showcase .container .left-side {
+    width: 50%;
+}
+
+#showcase .container .right-side {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+#showcase .container .right-side img {
+    width: 350px;
+}
+
+#showcase #location{
+    color: gray;
+    background-color: rgba(47, 60, 79, 0.397);
+    border: 1px solid grey;
+    border-radius: 20px;
+    width: 60%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 10px;
+}
+
+#showcase h1{
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    margin-bottom: 1rem;
+}
+
+#showcase p{
+    color: gray;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 1.8rem;
+}
+
+#showcase .container .btn{
+    display: flex;
+    align-items: center;
+    gap: 15px
+}
+
+#showcase .container .btn button{
+    font-weight: bold;
+    color: #000;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    transition: all  0.5s ease;
+}
+
+#showcase .container .btn .active button{
+    background-color: darkgoldenrod;
+    color: #000;
+    border: 1px solid darkgoldenrod;
+    cursor: pointer;
+}
+
+#showcase .container .btn .border button{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #272b38;
+    cursor: pointer;
+}
+
+#showcase .container .btn button:hover{
+   background-color: black; 
+   color: darkgoldenrod;
+   border: 1px solid darkgoldenrod;
+   transform: translateY(-5px);
+}
+
+
+
+#showcase img{
+    margin-top: 2rem;
+    width: 200px;
+}
+
+#newsletter{
+    background-color: #14171f;
+    border-top: 1px solid #272b38;
+    border-bottom: 1px solid #272b38;
+    /* padding: 25px; */
+}
+
+#newsletter .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#newsletter .container p{
+    color: white;
+    padding: 1.5rem;
+    /* border-right: 1px solid #272b38; */
+    /* border-top: 1px solid #272b38; */
+}
+
+#newsletter .container > *:not(:last-child) {
+    border-right: 1px solid #272b38;
+}
+
+.main{
+    background-color: #0d0f14;
+    padding: 25px;
+    width: 100%;
+}
+.main .container{    
+    /* width: 100%; */
+}
+
+#course-cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2%;
+}
+
+#course-cards-container #card{
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background-color: #14171f;
+}
+
+.main .container h2{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.main .container p{
+    text-align: center;
+    color: grey;
+    margin-bottom: 15px;
+}
+
+.main #card{
+    background-color: darkslategray;
+    margin-bottom: 10px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.main #card a{
+    padding: 15px;
+}
+
+.main #card h3{
+    color: white;
+    margin-bottom: 15px;
+}
+
+.main #card p{
+    text-align: left;
+}
+
+.main #card .card1{
+    padding: 10px;
+    background-color: rgb(79, 76, 47);
+    border: 1px solid goldenrod;
+    max-width: 150px;
+    text-align: center;
+    border-radius: 18px;
+    margin-bottom: 15px;
+    color: goldenrod;
+}
+
+.main #card:hover{
+    border: 1px solid rgb(0, 140, 255);
+    cursor: pointer;
+}
+
+.main #flex{
+    display: flx;
+    gap: 10x;
+    flex-wrap: rap;
+}
+
+.main #card a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid grey;
+    background-color: rgba(47, 60, 79, 0.397);
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    max-width: 100%;
+    margin: 15px;   
+}
+
+.main #card a:hover{
+    background-color: rgba(255, 217, 0, 0.815);
+    border: none;
+}
+
+.schedule{
+    background-color: #14171f;
+    padding: 25px;
+    text-align: centr;
+}
+
+.schedule .container h2{
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 20px;
+} 
+
+.schedule .container p{
+    color: #848ca0;
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.schedule .container table th{
+    text-align: left;
+    color: gray;
+    background-color: rgba(47, 60, 79, 0.397);
+    padding: 15px;
+    border-bottom: 1px solid gray;
+}
+
+.schedule .container table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.schedule .container table td{
+    padding: 15px;
+    color: white;
+    border-bottom: 1px solid gray;
+    margin-top: 10px;
+}
+
+.schedule .container table .open{
+    background-color: #173229;
+    color: #46cd6c;
+    padding-inline: 10px;
+    padding-block: 5px;
+    border-radius: 50px;
+    width: fit-content;
+}
+
+.schedule .container table .full{
+    background-color: #351e24;
+    color: #f86450;
+    padding-inline: 10px;
+    padding-block: 5px;
+    border-radius: 50px;
+    width: fit-content;
+}
+
+.schedule .container table .soon{
+    background-color: #1a273f;
+    color: #5b9ff6;
+    text-align: left;
+    padding-inline: 10px;
+    padding-block: 5px;
+    border-radius: 50px;
+    width: fit-content;
+}
+
+.schedule .container table tbody:hover{
+        background-color: rgba(47, 60, 79, 0.397);
+}
+
+#about{
+    background-color: #0d0f14;
+    padding: 25px;
+}
+
+#about .container h3{
+    margin-top: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#about .container p{
+    color: #8b90a0;
+}
+
+#about .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+#about .container .about-left-side{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 50%;
+}
+
+#about .container .about-right-side{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 1px solid #272b38;
+    border-radius: 10px;
+    height: 100px;
+    gap: 10px;
+    width: 50%;
+}
+
+#about .container .about-right-side  div {
+    border-right: 1px solid #272b38;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .container .about-right-side  div:last-child {
+    border-right: none;
+}
+
+#about .container .touch{
+    text-decoration: none;
+    color: black;
+    background-color: goldenrod;
+    padding: 10px;
+    border: 1px solid goldenrod;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    margin-bottom: 50px;
+}
+
+#about .container .touch:hover{
+    background-color: black;
+    color: goldenrod;
+    border: 2px solid gold;
+}
+
+#about .container .boxes div{
+    border-bottom: 1px solid grey;
+    padding: 10px;
+}
+
+#about .container .boxes div:last-child{
+    border-bottom: none;
+}
+
+#footer{
+    background-color: #14171f;
+    padding: 25px;
+    border-top: 1px solid #272b38;
+}
+
+#footer .container h2{
+    color: white;
+    margin-bottom: 15px;
+}
+
+#footer .container p{
+    color: grey;
+    margin-bottom: 15px;
+}
+
+#footer .container ul{
+    list-style-type: none;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#footer .container ul li a{
+    color: grey;
+    text-decoration: none;
+}
+
+#footer .container ul li a:hover{
+    color: goldenrod;
+}
+
+#footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer{
+    background-color: #14171f;
+    color: #7c8c83;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #272b38;
+}
+
+
+
+/* CONTACT.HTML STYLES */
+#active{
+    color: darkgoldenrod;
+}
+
+#white{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#white2{
+    color: white;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#white3{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#white4{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+form .your-message{
+    margin-top: 20px;
+}
+
+#gray{
+    color: gray;
+    padding: 0;
+    text-align: center;
+}
+
+#layout{
+    padding: 25px;
+    background-color: #0d0f14;
+}
+
+.container-layout-flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.left-side-layout{
+    display: flex;
+}
+
+.right-side-layout{
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    background-color: #14171f;
+    margin-top: 30px;
+    border: 1px solid #272b38;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.preferred-mode {
+    display: flex;
+    gap: 10px;
+}
+
+form h2{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* text-align: center; */
+}
+
+form p{
+    color: gray;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+form label{
+    display: block;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+form input[type=text], input[type=email], input[type=number], select{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #1c2030; 
+    border: 1px solid #272b38;
+    padding: 10px;
+}
+
+form input:focus{
+    border: 2px solid goldenrod;
+    outline: none;
+} 
+
+form select:focus{
+    border: 2px solid goldenrod;
+    outline: none;
+    color: white;
+}
+
+form textarea:focus{
+    border: 2px solid goldenrod;
+    outline: none;
+}
+
+form textarea{
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #1c2030; 
+    border: 1px solid #272b38;
+    padding: 10px;
+}
+
+form button{
+    width: 100%;
+    display: block;
+    background-color: goldenrod;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+button #black{
+    color: black;
+}
+
+form button:hover{
+    background-color: #0d0f14;
+    cursor: pointer;
+    border: 2px solid gold;
+    color: goldenrod;
+}
+
+.color-gray{
+    color: gray;
+}
+
+#hover:hover{
+    color: goldenrod;
+}
+
+.submit-message{
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    margin: 10px auto 0;
+    padding-left: 200px; */
+    position: relative;
+}
+
+.message{
+    position: absolute;
+    bottom: 5px;
+    padding-left: 3px;
+}
+
+#find-us{
+    margin-bottom: 30px;
+    margin-top: 30px; 
+}
+
+#semiwhite{
+    color: white;
+    /* padding: 10px; */
+}
+
+#semiwhite p{
+    padding: 10px;
+}
+
+#layout .container #table2  {
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color:  gray;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.container #table2, caption{
+    background-color: rgba(47, 79, 79, 0.192);
+    border-radius: 8px 8px 0 0 !important;
+    color: whitesmoke;
+    border-collapse: collapse;
+}
+
+.container #table2 th{
+    color: gray;
+    text-align: left;
+    padding: 20px;
+    border-bottom: 1px solid gray;
+    background-color: darkslategrey;
+}
+
+.container #table2 th, td{
+    padding: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.container #table2 th{
+    border-top: 1px solid gray;
+}
+
+.container #table2 caption{
+    text-align: left;
+    padding: 20px;
+    background-color: darkslategrey;
+    border-bottom: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Chrome, Safari, Edge, and Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+    
+
+/* Responsiveness */
+@media screen and (max-width: 760px) {
+    #showcase .container {
+        width: full;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #showcase #location{
+        justify-self: center;
+        font-size: 13px;
+    }
+   
+
+    #showcase .container .left-side {
+        width: 100%;
+        text-align: center;
+    }
+
+    #showcase .container .btn{
+        justify-content: center;
+    }
+
+    #showcase .container .right-side img {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    #course-cards-container #card{
+        width: 100%;
+    }
+
+    /* Newsletter section */
+    #newsletter .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #newsletter .container > *:not(:last-child) {
+        border-bottom: 1px solid #272b38;
+    }
+
+
+    /* About section */
+    #about .container {
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    #about .container .about-left-side{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    #about .container .about-right-side{
+         width: 100%;
+    }
+
+    /* Footer section */
+    #footer .container{
+        flex-direction: column;
+        padding: 20px;
+    }
+}
